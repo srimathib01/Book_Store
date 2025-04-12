@@ -18,7 +18,6 @@ app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(express.static('public'))
 app.use('/', indexRouter)
-
 const mongoose=require('mongoose')
 mongoose.connect(process.env.DATABASE_URL)
 const db=mongoose.connection
